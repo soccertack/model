@@ -1,0 +1,17 @@
+cache_state_modelled=0
+bp.virtioblockdevice.image_path="L0.img"
+bp.pl011_uart0.untimed_fifos=1
+bp.secure_memory=0
+bp.dram_size=0x8
+pctl.startup=0.0.0.0
+cluster0.NUM_CORES=4
+#cluster1.NUM_CORES=0
+bp.refcounter.non_arch_start_at_default=1
+gic_distributor.wakeup-on-reset=1
+gicv3.gicv2-only=1
+gic_distributor.GICD-alias=0x2F000000
+#bp.hostbridge.interfaceName=ARMfmuser
+bp.hostbridge.userNetworking=true
+bp.hostbridge.userNetPorts="8022=22"
+bp.smsc_91c111.enabled=true
+cluster0.has_arm_v8-3=true
