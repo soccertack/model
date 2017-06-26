@@ -6,4 +6,7 @@ source update-common.sh
 #scp $SRV:$MODEL/host-rfc-v2/$KERNEL .
 
 # This is 4.10 version
-scp $SRV:$NESTING/host-model-4.10/$KERNEL .
+#scp $SRV:$NESTING/host-model-4.10/$KERNEL .
+
+# This is from local
+cp /users/jintackl/host-pv/$KERNEL .
