@@ -3,7 +3,7 @@
 set timeout 1200000
 
 log_file mylog
-spawn telnet localhost 5000
+source start_telnet.sh
 sleep 1
 send "\n"
 expect -re "L0.*# "
@@ -12,3 +12,4 @@ expect -re "L1.*# "
 send "cd vm\n"
 expect -re "L1.*# "
 send "./run-guest.sh -c 2\n"
+expect -re "L2.*# "
