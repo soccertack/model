@@ -15,3 +15,7 @@ bp.hostbridge.userNetworking=true
 bp.hostbridge.userNetPorts="8022=22"
 bp.smsc_91c111.enabled=true
 cluster0.has_arm_v8-3=true
+bp.terminal_0.start_port=6000
+bp.terminal_1.start_port=6001
+bp.terminal_2.start_port=6002
+bp.terminal_3.start_port=6003
