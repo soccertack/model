@@ -9,20 +9,20 @@ source update-common.sh
 #DIR="pv-guest-model"
 
 LOCAL="/users/jintackl"
-DIR="guest-pv"
+DIR="guest-vanilla"
 BOOT="arch/arm64/boot"
 
-#This is 4.12
-#DIR="vanilla"
-
+# For remote, uncomment this. Untested
 #SRC_PATH=$MODEL/$DIR/arch/arm64/boot
+#CP=scp
+
+CP=cp
 SRC_PATH=$LOCAL/$DIR/$BOOT
 
 L0_PATH=.
 
 echo $SRC_PATH
-#scp jintack@jintack.cs.columbia.edu:$SRC_PATH/$IMAGE  .
-cp $SRC_PATH/Image .
+$CP $SRC_PATH/Image .
 
 sudo mount $L0_PATH/L0.img l0_mnt
 md5sum $IMAGE

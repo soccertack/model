@@ -9,4 +9,4 @@ source update-common.sh
 #scp $SRV:$NESTING/host-model-4.10/$KERNEL .
 
 # This is from local
-cp /users/jintackl/host-pv/$KERNEL .
+cp /users/jintackl/host-low/$KERNEL .
